@@ -3,8 +3,8 @@
     "responseCode": 200,
     "message": "",
     "dataAds": {
-        "adsOnOff": false,
-        "isTestMode": false,
+        "adsOnOff": true,
+        "isTestMode": true,
         "isConsentMsgShow": false,
         "isBackInterstitialShow": false,
         "adsTypeOpenServer": "google",
