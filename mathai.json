@@ -39,6 +39,7 @@
         "publisherId": "",
         "privacyPolicy": "https://codexatgames.github.io/mathgenius_privacy_policy.html",
         "localPrivacyPolicy": "https://codexatgames.github.io/mathgenius_privacy_policy.html",
+        "termsCondi" : "https://codexatgames.github.io/math_terms_condition.html",
         "localBanner": [
             {
                 "bannerLink": "https://play.google.com/store/apps/details?id=com.ludo.king",
