@@ -3,9 +3,9 @@
     "responseCode": 200,
     "message": "",
     "dataAds": {
-        "appLive": true,
+        "appLive": false,
         "adsOnOff": false,
-        "isTestMode": true,
+        "isTestMode": false,
         "isConsentMsgShow": true,
         "isBackInterstitialShow": true,
         "adsTypeOpenServer": "google",
