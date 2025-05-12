@@ -4,8 +4,8 @@
     "message": "",
     "dataAds": {
         "appLive": false,
-        "adsOnOff": true,
-        "isTestMode": true,
+        "adsOnOff": false,
+        "isTestMode": false,
         "isConsentMsgShow": true,
         "isBackInterstitialShow": true,
         "adsTypeOpenServer": "google",
