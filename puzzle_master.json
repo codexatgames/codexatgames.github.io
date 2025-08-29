@@ -3,8 +3,8 @@
     "responseCode": 200,
     "message": "",
     "dataAds": {
-        "appLive": false,
-        "adsOnOff": false,
+        "appLive": true,
+        "adsOnOff": true,
         "isTestMode": false,
         "isConsentMsgShow": true,
         "isBackInterstitialShow": true,
