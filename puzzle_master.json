@@ -5,7 +5,7 @@
     "dataAds": {
         "appLive": true,
         "adsOnOff": true,
-        "isTestMode": false,
+        "isTestMode": true,
         "isConsentMsgShow": true,
         "isBackInterstitialShow": true,
         "adsTypeOpenServer": "google",
@@ -13,7 +13,7 @@
         "adsTypeNativeServer": "google",
         "adsTypeInterstitialServer": "google",
         "openAdsTimer": 15000,
-        "interstitialClick": 3,
+        "interstitialClick": 0,
         "randomAdType": "google,custom",
         "nativeTheme": "custom",
         "googleBannerId": "ca-app-pub-9415135547486412/5891860933",
