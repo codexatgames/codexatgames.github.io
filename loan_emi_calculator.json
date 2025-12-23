@@ -39,7 +39,7 @@
         "publisherId": "",
         "privacyPolicy": "https://codexatgames.github.io/loan_emi_privacy_policy.html",
         "localPrivacyPolicy": "https://codexatgames.github.io/loan_emi_privacy_policy.html",
-        "adsButtonColor" = "#5078AD",
+        "adsButtonColor" : "#5078AD",
         "localBanner": [
             {
                 "bannerLink": "https://play.google.com/store/apps/details?id=com.ludo.king",
