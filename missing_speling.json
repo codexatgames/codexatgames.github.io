@@ -38,7 +38,7 @@
         "publisherId": "",
         "privacyPolicy": "https://codexatgames.github.io/missing_spelling_privacy_policy.html",
         "localPrivacyPolicy": "https://codexatgames.github.io/missing_spelling_privacy_policy.html",
-        "adsButtonColor" = "#0053C7",
+        "adsButtonColor" : "#0053C7",
         "localBanner": [
             {
                 "bannerLink": "https://play.google.com/store/apps/details?id=com.ludo.king",
