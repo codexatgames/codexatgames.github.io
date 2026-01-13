@@ -38,7 +38,7 @@
         "publisherId": "",
         "localPrivacyPolicy": "https://camappscctv.github.io/privacy.html",
         "is_open_active": "true",
-"is_guide": "true",
+"is_guide": "false",
 "is_guide_ins_ads": "true",
 "is_language_ins_ads": "false",
 "is_lifeline_ins_ads": "true",
