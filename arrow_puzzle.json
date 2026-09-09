@@ -5,7 +5,7 @@
     "dataAds": {
         "appLive": false,
         "adsOnOff": true,
-        "isTestMode": false,
+        "isTestMode": true,
         "isConsentMsgShow": true,
         "isBackInterstitialShow": true,
         "adsTypeOpenServer": "google",
