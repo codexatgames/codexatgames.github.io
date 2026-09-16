@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Bridge Builder: Master Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap%22 rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #06090D;
+            --bg-card: rgba(18, 25, 36, 0.75);
+            --bg-card-border: rgba(0, 176, 255, 0.25);
+            --text-primary: #FFFFFF;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+            --accent-blue: #00B0FF;
+            --accent-gold: #FFD54F;
+            --accent-green: #00E676;
+            --radius-lg: 20px;
+            --radius-sm: 10px;
+        }
+ 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-base);
+            background-image:
+                radial-gradient(circle at 15% 20%, rgba(0, 176, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 85% 80%, rgba(255, 213, 79, 0.05) 0%, transparent 40%),
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+ 
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+ 
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 20px;
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--bg-card-border);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+        }
+ 
+        .game-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(0, 176, 255, 0.12);
+            border: 1px solid var(--accent-blue);
+            color: var(--accent-blue);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+ 
+        .header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #FFFFFF 0%, #FFD54F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+ 
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+        }
+ 
+        .section {
+            background: var(--bg-card);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            transition: border-color 0.2s ease;
+        }
+ 
+        .section:hover {
+            border-color: rgba(0, 176, 255, 0.35);
+        }
+ 
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+ 
+        .section-icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 176, 255, 0.15);
+            border-radius: var(--radius-sm);
+            font-size: 18px;
+            color: var(--accent-blue);
+        }
+ 
+        .section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 0.2px;
+        }
+ 
+        p {
+            color: var(--text-secondary);
+            font-size: 14.5px;
+            margin-bottom: 14px;
+        }
+ 
+        p:last-child {
+            margin-bottom: 0;
+        }
+ 
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+ 
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text-secondary);
+            font-size: 14.5px;
+        }
+ 
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--accent-blue);
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1;
+        }
+ 
+        .info-pill {
+            background: rgba(0, 230, 118, 0.1);
+            border-left: 3px solid var(--accent-green);
+            padding: 12px 16px;
+            border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+            margin: 14px 0;
+            font-size: 13.5px;
+            color: #E2E8F0;
+        }
+ 
+        .highlight-box {
+            background: rgba(255, 213, 79, 0.08);
+            border: 1px solid rgba(255, 213, 79, 0.25);
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            margin: 14px 0;
+            font-size: 13.5px;
+            color: #FEF08A;
+        }
+ 
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+ 
+        a:hover {
+            color: var(--accent-gold);
+            text-decoration: underline;
+        }
+ 
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+ 
+        .footer span {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+ 
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 14px;
+            }
+            .header {
+                padding: 20px 16px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .section {
+                padding: 20px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="container">
+ 
+        <!-- HEADER HERO -->
+        <div class="header">
+            <div class="game-badge">🌉 Official Game Policy</div>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">
+                Application: <strong>Bridge Builder: Master Architect</strong> (Package: <code>com.codexatgames.bridgebuilder</code>)<br>
+                Developer: <strong>Codexat Games</strong> &bull; Effective Date: <strong>March 2026</strong>
+            </div>
+        </div>
+ 
+        <!-- 1. INTRODUCTION -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📜</div>
+                <h2>1. Introduction</h2>
+            </div>
+            <p>
+                Welcome to <strong>Bridge Builder: Master Architect</strong>, developed and published by <strong>Codexat Games</strong> ("we", "our", or "us").
+                We are committed to protecting your privacy and ensuring a transparent, safe, and enjoyable gaming experience for players of all ages worldwide.
+            </p>
+            <p>
+                This Privacy Policy explains how our game collects, uses, stores, and handles information when you install and play Bridge Builder on mobile devices.
+            </p>
+        </div>
+ 
+        <!-- 2. INFORMATION WE COLLECT & ACCESS -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🔍</div>
+                <h2>2. Information We Collect</h2>
+            </div>
+            <p>
+                We do <strong>not</strong> collect or store personal identifying information such as your real name, email address, physical address, phone number, or biometric data.
+            </p>
+            
+            <div class="info-pill">
+                <strong>Local Device Storage (Offline Play):</strong> Game progress, unlocked levels (1–30), earned stars, custom bridge design blueprints, and audio/haptic settings are stored 100% locally on your device via standard private app preferences.
+            </div>
+ 
+            <p>The game and integrated third-party SDKs may automatically access limited non-personal technical data, including:</p>
+            <ul>
+                <li><strong>Device Information:</strong> Device model, operating system version, screen resolution, and language settings.</li>
+                <li><strong>Network Status:</strong> Network connectivity state (WiFi/Mobile data) to check remote configuration and deliver advertisements.</li>
+                <li><strong>Advertising Identifiers:</strong> Google Advertising ID (GAID) or Apple IDFA for ad attribution and frequency capping.</li>
+            </ul>
+        </div>
+ 
+        <!-- 3. THIRD-PARTY SERVICES & ADVERTISING -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📢</div>
+                <h2>3. Third-Party Advertising & Services</h2>
+            </div>
+            <p>
+                To provide free access to all game levels, Bridge Builder uses reputable third-party advertising partners:
+            </p>
+            <ul>
+                <li>
+                    <strong>Google AdMob (Google LLC):</strong> Used to display Banner, Interstitial, and Rewarded Survey Ads. Google AdMob may collect and process pseudonymous identifiers and usage data according to the
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> and
+                    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Policies</a>.
+                </li>
+                <li>
+                    <strong>GitHub Remote Configuration:</strong> We securely host remote game parameters (maintenance flags, version update announcements, and ad frequency) via static JSON on GitHub Pages. No personal user data is sent to or stored on GitHub servers.
+                </li>
+            </ul>
+        </div>
+ 
+        <!-- 4. PERMISSIONS USED -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">⚙️</div>
+                <h2>4. App Permissions Explained</h2>
+            </div>
+            <p>Bridge Builder requests only minimal permissions necessary for standard gameplay:</p>
+            <ul>
+                <li><code>android.permission.INTERNET</code>: Required for fetching game update notices, maintenance status, and loading AdMob ads.</li>
+                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Used to verify internet availability before making network calls, ensuring seamless offline mode.</li>
+                <li><code>android.permission.VIBRATE</code>: Used exclusively for immersive haptic tactile feedback when placing bridge joints, snapping beams, and vehicle crossings (can be toggled in Game Settings).</li>
+            </ul>
+        </div>
+ 
+        <!-- 5. CHILDREN'S PRIVACY (COPPA) -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🛡️</div>
+                <h2>5. Children's Privacy</h2>
+            </div>
+            <p>
+                Our game is family-friendly and suitable for general audiences. We comply with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and the <strong>EU General Data Protection Regulation (GDPR)</strong>.
+            </p>
+            <p>
+                We do not knowingly collect personal information from children under the age of 13 (or 16 in certain jurisdictions). If you are a parent or guardian and believe your child has provided us with personal data, please contact us immediately so we can promptly delete it.
+            </p>
+        </div>
+ 
+        <!-- 6. GDPR & CCPA USER RIGHTS -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">🌐</div>
+                <h2>6. Your Privacy Rights (GDPR & CCPA)</h2>
+            </div>
+            <p>Depending on your location, you have specific rights regarding your data:</p>
+            <ul>
+                <li><strong>Opt-Out of Personalized Ads:</strong> You can reset or opt-out of personalized ads at any time via your device settings (<em>Settings &gt; Google &gt; Ads &gt; Reset/Delete Advertising ID</em>).</li>
+                <li><strong>Data Deletion:</strong> You can erase all local game data at any time by clearing the game cache/storage in your device's App Manager or uninstalling the app.</li>
+            </ul>
+        </div>
+ 
+        <!-- 7. CHANGES & CONTACT -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon">📬</div>
+                <h2>7. Policy Updates & Contact Us</h2>
+            </div>
+            <p>
+                We may periodically update this Privacy Policy to reflect new game features, legal requirements, or service improvements. Any updates will be posted directly to this webpage with an updated Effective Date.
+            </p>
+            <p>
+                If you have any questions, suggestions, or concerns regarding this Privacy Policy, please contact our support team at:
+            </p>
+            <p style="margin-top: 10px;">
+                📧 Email: <a href="mailto:nikunj@codexperts.in">nikunj@codexperts.in</a>
+            </p>
+        </div>
+ 
+        <!-- FOOTER -->
+        <div class="footer">
+            &copy; 2026 <span>Codexat Games</span>. All Rights Reserved.<br>
+            Bridge Builder: Master Architect &bull; Designed with Engineering Excellence.
+        </div>
+    </div>
+</body>
+</html>
