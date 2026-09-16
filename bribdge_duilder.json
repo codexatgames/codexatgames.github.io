@@ -1,0 +1,40 @@
+{
+  "status": true,
+  "responseCode": 200,
+  "message": "Success",
+  "appUpdate": {
+    "versionCode": 1,
+    "appVersion": "1.0.0",
+    "minVersionCode": 1,
+    "forceUpdate": false,
+    "updateTitle": "🚀 New Update Available!",
+    "updateMessage": "A brand new version of Bridge Builder is ready with new exciting levels, smoother physics, and bug fixes! Please update to continue.",
+    "playStoreUrl": "https://play.google.com/store/apps/details?id=com.codexatgames.bridgebuilder",
+    "canSkip": true
+  },
+  "dataAds": {
+    "appLive": false,
+    "adsOnOff": false,
+    "isTestMode": true,
+    "isConsentMsgShow": true,
+    "isBackInterstitialShow": true,
+    "adsTypeOpenServer": "google",
+    "adsTypeBannerServer": "google",
+    "adsTypeNativeServer": "google",
+    "adsTypeInterstitialServer": "google",
+    "openAdsTimer": 15000,
+    "interstitialClick": 3,
+    "randomAdType": "google,custom",
+    "nativeTheme": "custom",
+    "googleBannerId": "ca-app-pub-3940256099942544/6300978111",
+    "googleInterstitialId": "ca-app-pub-3940256099942544/1033173712",
+    "googleNativeId": "ca-app-pub-3940256099942544/2247696110",
+    "googleAppOpenId": "ca-app-pub-3940256099942544/9257395921",
+    "googleRewardedId": "ca-app-pub-3940256099942544/5224354917",
+    "nativePerItem": "",
+    "publisherId": "",
+    "privacyPolicy": "https://codexatgames.github.io/arrow_puzzle_privacy_policy.html",
+    "localPrivacyPolicy": "https://codexatgames.github.io/arrow_puzzle_privacy_policy.html",
+    "adsButtonColor": "#0053C7"
+  }
+}
