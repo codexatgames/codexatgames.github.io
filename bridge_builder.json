@@ -35,8 +35,8 @@
     "googleRewardedId": "ca-app-pub-3940256099942544/5224354917",
     "nativePerItem": "",
     "publisherId": "",
-    "privacyPolicy": "",
-    "localPrivacyPolicy": "",
+    "privacyPolicy": "https://codexatgames.github.io/bridge_builder_privacy_policy.html",
+    "localPrivacyPolicy": "https://codexatgames.github.io/bridge_builder_privacy_policy.html",
     "adsButtonColor": "#0053C7"
   }
 }
