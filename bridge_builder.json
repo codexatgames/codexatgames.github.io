@@ -14,7 +14,7 @@
   },
   "dataAds": {
     "appLive": false,
-    "adsOnOff": true,
+    "adsOnOff": false,
     "isTestMode": true,
     "isBlockDevMode": true,
     "isBlockRooted": true
