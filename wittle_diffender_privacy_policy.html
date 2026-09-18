@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Wittle Defender: Castle Siege</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Poppins:wght@300;400;500;600;700&display=swap%22 rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #07090E;
+            --bg-secondary: #0F172A;
+            --card-bg: rgba(19, 23, 34, 0.75);
+            --gold-accent: #F59E0B;
+            --gold-soft: #FDE68A;
+            --cyan-accent: #06B6D4;
+            --cyan-soft: #A5F3FC;
+            --text-main: #E2E8F0;
+            --text-muted: #94A3B8;
+            --border-color: rgba(245, 158, 11, 0.25);
+        }
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden;
+        }
+ 
+        body::before {
+            content: '';
+            position: fixed;
+            top: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, rgba(6, 182, 212, 0.08) 50%, transparent 75%);
+            z-index: 0;
+            pointer-events: none;
+        }
+ 
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+            position: relative;
+            z-index: 1;
+        }
+ 
+        .header-card {
+            text-align: center;
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px 24px;
+            margin-bottom: 36px;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 24px rgba(245, 158, 11, 0.08);
+        }
+ 
+        .app-badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--gold-soft);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 6px 16px;
+            border-radius: 999px;
+            margin-bottom: 16px;
+        }
+ 
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 32px;
+            font-weight: 900;
+            color: #FFFFFF;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+        }
+ 
+        .subtitle {
+            color: var(--gold-soft);
+            font-size: 14px;
+            font-weight: 500;
+        }
+ 
+        .meta-info {
+            margin-top: 14px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+ 
+        .section-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 28px 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+            transition: border-color 0.2s ease;
+        }
+ 
+        .section-card:hover {
+            border-color: rgba(245, 158, 11, 0.35);
+        }
+ 
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--gold-soft);
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+ 
+        p {
+            font-size: 13.5px;
+            color: var(--text-main);
+            margin-bottom: 12px;
+        }
+ 
+        p:last-child {
+            margin-bottom: 0;
+        }
+ 
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 12px;
+        }
+ 
+        li {
+            font-size: 13px;
+            color: var(--text-main);
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+ 
+        li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--gold-accent);
+            font-size: 11px;
+        }
+ 
+        .highlight-box {
+            background: rgba(15, 23, 42, 0.85);
+            border-left: 3px solid var(--gold-accent);
+            padding: 14px 18px;
+            border-radius: 0 12px 12px 0;
+            margin: 14px 0;
+            font-size: 13px;
+            color: #CBD5E1;
+        }
+ 
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin-top: 14px;
+        }
+ 
+        .compliance-item {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 14px;
+        }
+ 
+        .compliance-item strong {
+            display: block;
+            color: var(--cyan-soft);
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+ 
+        .compliance-item span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+ 
+        a {
+            color: var(--cyan-soft);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+ 
+        a:hover {
+            color: var(--gold-soft);
+            text-decoration: underline;
+        }
+ 
+        footer {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+ 
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 16px 60px;
+            }
+            .header-card {
+                padding: 28px 18px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .section-card {
+                padding: 20px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+<div class="container">
+ 
+    <div class="header-card">
+        <div class="app-badge">Official Policy</div>
+        <h1>Wittle Defender: Castle Siege</h1>
+        <div class="subtitle">Privacy & Data Governance Policy</div>
+        <div class="meta-info">
+            <strong>Package Name:</strong> <code>com.wittlegames.wittledefender</code> &bull;
+            <strong>Effective Date:</strong> September 18, 2026
+        </div>
+    </div>
+ 
+    <div class="section-card">
+        <h2>🛡️ 1. Overview & Commitment</h2>
+        <p>
+            Welcome to <strong>Wittle Defender: Castle Siege</strong> (the "App"), developed and published by <strong>Wittle Games</strong> ("we", "our", or "us"). We are dedicated to providing an entertaining gaming experience while treating player privacy with the highest standards of transparency and integrity.
+        </p>
+        <p>
+            This Privacy Policy explains how information is handled when you download, install, and play our game. <strong>Wittle Defender is designed as an offline-first single-player roguelike game</strong>, and we do not collect, store, or sell any personal identifiable information (PII) such as names, email addresses, phone numbers, or physical locations.
+        </p>
+    </div>
+ 
+    <div class="section-card">
+        <h2>💾 2. Local Game Progression & Data Storage</h2>
+        <p>
+            All game progression data—including unlocked heroes, talent tree upgrades, astral crystals, gold vault balances, high scores, wave records, and settings—is stored <strong>exclusively locally on your device storage</strong> via secured local preferences.
+        </p>
+        <div class="highlight-box">
+            ✦ We do not require player account creation, social login, or cloud authentication.<br>
+            ✦ You retain complete ownership of your save data. Clearing app storage or uninstalling the game will remove local game files.
+        </div>
+    </div>
+ 
+    <div class="section-card">
+        <h2>📢 3. Third-Party Services & Advertisements</h2>
+        <p>
+            To keep Wittle Defender free to play, the game integrates trusted industry-standard third-party SDKs for advertising and basic app health analytics:
+        </p>
+        <ul>
+            <li>
+                <strong>Google AdMob & Google Mobile Ads SDK:</strong> Used to display non-intrusive banner, interstitial, rewarded video, and app open advertisements. AdMob may process anonymous device identifiers (such as Google Advertising ID / IDFA) to serve compliant, non-personalized or personalized ads depending on regional consent.
+            </li>
+            <li>
+                <strong>Google User Messaging Platform (UMP SDK):</strong> Provides explicit consent management forms for players located in the European Economic Area (EEA), United Kingdom, and Switzerland in compliance with GDPR.
+            </li>
+            <li>
+                <strong>Google Play Services:</strong> Used for platform compatibility, security verification, and game updates.
+            </li>
+        </ul>
+        <p>
+            For more details on how Google processes ad data, please review Google's official privacy policy:
+            <br>
+            👉 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Privacy & Terms for Advertising</a>
+        </p>
+    </div>
+ 
+    <div class="section-card">
+        <h2>🌐 4. Global Regulatory Compliance</h2>
+        <div class="compliance-grid">
+            <div class="compliance-item">
+                <strong>🇪🇺 GDPR (EU & UK)</strong>
+                <span>Compliant with Google UMP consent framework. Players can review or revoke consent choices at any time via the in-game Privacy Options.</span>
+            </div>
+            <div class="compliance-item">
+                <strong>🇺🇸 CCPA / CPRA (US)</strong>
+                <span>We do not sell or share personal information. We honor Do Not Track and Global Privacy Control signals.</span>
+            </div>
+            <div class="compliance-item">
+                <strong>🛡️ COPPA & Google Families</strong>
+                <span>Ad content is strictly capped at PG rating (`maxAdContentRating: pg`). No sensitive or age-inappropriate ads are served.</span>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="section-card">
+        <h2>👶 5. Children's Privacy</h2>
+        <p>
+            Protecting children's online privacy is of paramount importance to us. Wittle Defender does not knowingly collect any personal information from children under the age of 13 (or under the applicable age of digital consent in your jurisdiction).
+        </p>
+        <p>
+            If a parent or guardian believes that any information has been inadvertently collected, please contact us immediately, and we will promptly rectify the situation.
+        </p>
+    </div>
+ 
+    <div class="section-card">
+        <h2>🔒 6. Security & Game Integrity</h2>
+        <p>
+            We implement robust administrative, technical, and platform security measures to protect the integrity of the application:
+        </p>
+        <ul>
+            <li>R8 / ProGuard code obfuscation and native binary stripping to prevent unauthorized tampering.</li>
+            <li>Anti-tamper security policies that enforce fair play across all game modes.</li>
+            <li>Zero background data tracking or unauthorized telemetry collection.</li>
+        </ul>
+    </div>
+ 
+    <div class="section-card">
+        <h2>⚙️ 7. Your Privacy Rights & Opt-Out Choices</h2>
+        <p>You have full control over your privacy settings:</p>
+        <ul>
+            <li><strong>Reset Advertising ID:</strong> You can reset or delete your Advertising Identifier at any time via your device settings: <em>Settings &gt; Google &gt; Ads &gt; Reset advertising ID</em>.</li>
+            <li><strong>Opt-out of Personalized Ads:</strong> Toggle off personalized advertising in your Android / iOS system settings.</li>
+            <li><strong>In-Game Consent:</strong> Access the in-game settings / privacy button to adjust or review your consent choices.</li>
+        </ul>
+    </div>
+ 
+    <div class="section-card">
+        <h2>📝 8. Changes to This Privacy Policy</h2>
+        <p>
+            We may periodically update our Privacy Policy to reflect changes in game features, legal regulations, or operational practices. Any updates will be posted to this page with an updated "Effective Date".
+        </p>
+    </div>
+ 
+    <div class="section-card">
+        <h2>📬 9. Contact Us</h2>
+        <p>
+            If you have any questions, suggestions, or concerns regarding this Privacy Policy or our privacy practices, please contact our support team:
+        </p>
+        <div class="highlight-box">
+            📧 <strong>Email:</strong> <a href="mailto:nikunj@codexperts.in">nikunj@codexperts.in</a>
+        </div>
+    </div>
+ 
+    <footer>
+        &copy; 2026 Wittle Games. All Rights Reserved. &bull; Wittle Defender: Castle Siege (v1.0.0)
+    </footer>
+ 
+</div>
+ 
+</body>
+</html>
