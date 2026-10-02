@@ -13,9 +13,9 @@
     "canSkip": true
   },
   "dataAds": {
-    "appLive": true,
-    "adsOnOff": true,
-    "isTestMode": true,
+    "appLive": false,
+    "adsOnOff": false,
+    "isTestMode": false,
     "isConsentMsgShow": true,
     "isBackInterstitialShow": true,
     "isBlockDevMode": false,
