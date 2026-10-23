@@ -1,0 +1,46 @@
+{
+  "app_control": {
+    "min_required_version": "1.0.0",
+    "latest_version": "1.0.0",
+    "force_update": false,
+    "update_title": "🚀 New Update Available!",
+    "update_message": "A brand new update with new tracks, enhanced vehicle physics, and performance fixes is available. Please update to continue playing!",
+    "privacy_policy_url": "",
+    "play_store_url": "",
+    "app_store_url": ""
+  },
+  "ads_control": {
+    "test_mode": true,
+    "consent_enabled": true,
+    "force_test_consent_popup": false,
+    "ads_enabled": true,
+    "banner_enabled": true,
+    "interstitial_enabled": true,
+    "rewarded_enabled": true,
+    "native_enabled": true,
+    "interstitial_interval_games": 3,
+    "interstitial_cooldown_seconds": 90,
+    "reward_coin_multiplier": 2,
+    "reward_revive_fuel_percent": 0.5
+  },
+  "security_control": {
+    "block_developer_options": false,
+    "developer_mode_warning_title": "⚠️ Developer Options Detected!",
+    "developer_mode_warning_message": "For fair gameplay and security, Developer Options (USB Debugging) must be turned OFF. Please disable Developer Options in Settings to continue playing.",
+    "open_settings_button_text": "⚙️ OPEN DEVELOPER SETTINGS"
+  },
+  "ad_units": {
+    "android": {
+      "banner": "ca-app-pub-3940256099942544/6300978111",
+      "interstitial": "ca-app-pub-3940256099942544/1033173712",
+      "rewarded": "ca-app-pub-3940256099942544/5224354917",
+      "native": "ca-app-pub-3940256099942544/2247696110"
+    },
+    "ios": {
+      "banner": "ca-app-pub-3940256099942544/2934735716",
+      "interstitial": "ca-app-pub-3940256099942544/4411468910",
+      "rewarded": "ca-app-pub-3940256099942544/1712485313",
+      "native": "ca-app-pub-3940256099942544/3986624511"
+    }
+  }
+}
