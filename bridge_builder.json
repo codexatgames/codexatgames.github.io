@@ -13,8 +13,8 @@
     "canSkip": true
   },
   "dataAds": {
-    "appLive": false,
-    "adsOnOff": false,
+    "appLive": true,
+    "adsOnOff": true,
     "isTestMode": false,
     "isConsentMsgShow": true,
     "isBackInterstitialShow": true,
